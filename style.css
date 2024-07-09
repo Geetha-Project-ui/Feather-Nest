@@ -1,0 +1,141 @@
+body, html {
+    height: 100%;
+    font-family: "Urbanist", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.left-side {
+    background: linear-gradient(to bottom, #0b8793, #360033);
+    color: white;
+    padding-top: 24px;
+    padding-left:0;
+    padding-right: 0;
+}
+
+.logo,.login-content {
+    padding-left: 40px;
+}
+.login-content{
+    width: 50%;
+}
+
+.right-side {
+    background: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.sign-in-form{
+    width: 60%;
+    margin: 0 auto;
+}
+
+.btn-outline-gray{
+    border:1px solid #D2D2D2;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.btn-outline-gray img{
+    width: 24px;
+    height: 24px;
+}
+.sign-in-form h2 {
+    color: #000;
+}
+
+.btn-outline-dark {
+    border-color: #333;
+    color: #333;
+}
+
+.btn-outline-dark:hover {
+    background-color: #333;
+    color: white;
+}
+
+.btn-success {
+    background: #5ABA8A;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+    color:#fff
+}
+
+.btn-success:hover {
+    background: #16a085;
+}
+
+.btn-sign{
+    background: #03565B;
+    border-radius: 8px;
+    color:#fff;
+    width: max-content;
+    margin: 0 0 0 auto;
+    padding: 5px 20px;
+}
+
+.form-check-label {
+    margin-left: 5px;
+}
+
+.text-decoration-none {
+    color: #03565B;
+}
+
+.text-decoration-none:hover {
+    color: #16a085;
+}
+
+h1, h2 {
+    margin-bottom: 1rem;
+}
+
+form .mb-3, .form-check {
+    margin-bottom: 1rem !important;
+}
+
+form {
+    margin-bottom: 40px;
+}
+.form-check-input:checked {
+    background-color: #5ABA8A;
+    border-color: #5ABA8A;
+}
+@media(max-width:1024px){
+    .sign-in-form{
+        width: 100%;
+    }
+    .login-content {
+        width: 100%;
+    }
+}
+@media(max-width:767px){
+    .sign-in-form{
+        width: 60%;
+    }
+    .login-content {
+        width: 50%;
+    }
+}
+@media(max-width:640px){
+    .logo, .login-content {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .right-side{
+        height: auto;
+    }
+    .sign-in-form{
+        margin-top: 20px;
+        width: 90%;
+    }
+    .login-content {
+        width: 90%;
+    }
+}
