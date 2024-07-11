@@ -6,7 +6,7 @@ body, html {
 }
 
 .left-side {
-    background: linear-gradient(to bottom, #0b8793, #360033);
+    background: linear-gradient(360deg, #5ABA8A 0%, #238E96 46%, #044460 100%);
     color: white;
     padding-top: 24px;
     padding-left:0;
@@ -106,6 +106,92 @@ form {
 .form-check-input:checked {
     background-color: #5ABA8A;
     border-color: #5ABA8A;
+}
+
+/* Dashboard */
+
+.sidebar {
+    background: linear-gradient(180deg, #014C82 0%, #019CAD 100%);
+    color: white;
+    min-height: 100vh;
+}
+.sidebar .nav-link {
+    color: white;
+    font-weight: 500;
+    margin: 10px 0;
+}
+.sidebar .nav-link.active {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+}
+.header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .btn-link {
+    color: #495057;
+    position: relative;
+}
+.header .btn-link .badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+.card-custom {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+.card-header {
+    background-color: transparent;
+    border-bottom: none;
+}
+.card-header button {
+    background-color: #014C82;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.table thead {
+    background-color: #f8f9fa;
+}
+.badge-custom {
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.badge-success {
+    background-color: #28a745;
+}
+.badge-warning {
+    background-color: #ffc107;
+}
+.badge-danger {
+    background-color: #dc3545;
+}
+.card-upload {
+    border: 2px dashed #dee2e6;
+    border-radius: 12px;
+    text-align: center;
+    padding: 30px;
+}
+.card-upload p {
+    color: #495057;
+    font-weight: 500;
+}
+.card-upload button {
+    background-color: #014C82;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.chart-container {
+    position: relative;
+    margin: auto;
+    height: 200px;
 }
 @media(max-width:1024px){
     .sign-in-form{
