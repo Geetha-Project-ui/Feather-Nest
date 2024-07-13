@@ -107,7 +107,13 @@ form {
     background-color: #5ABA8A;
     border-color: #5ABA8A;
 }
-
+.form-control:focus {
+    color: #5ABA8A;
+    background-color: unset;
+    border-color: #5ABA8A;
+    outline: 0;
+    box-shadow: unset;
+}
 /* Dashboard */
 
 .sidebar {
