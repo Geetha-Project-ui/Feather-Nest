@@ -10,3 +10,4 @@ document.getElementById('show-sign-in').addEventListener('click', function(event
     document.getElementById('sign-up-form').classList.add('d-none');
     document.getElementById('sign-in-form').classList.remove('d-none');
 });
+
