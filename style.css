@@ -249,6 +249,9 @@ form {
     }
 }
 @media(max-width:640px){
+    .carousel{
+        height: 200px;
+    }
     .logo, .login-content {
         padding-left: 15px;
         padding-right: 15px;
