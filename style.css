@@ -279,18 +279,43 @@ form {
     padding: 14px 30px;
 }
 .badge-custom {
-    padding: 5px 10px;
-    border-radius: 5px;
+    padding: 8px 12px;
+    border-radius: 50px;
     font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    width: 50%;
+    height: 31px;
 }
 .badge-success {
-    background-color: #28a745;
+    background-color: #DAFAE3;
+    color:#409261
 }
 .badge-warning {
-    background-color: #ffc107;
+    background-color: #FFF2DD;
+    color:#D98634
 }
 .badge-danger {
-    background-color: #dc3545;
+    background-color: #FEE6EA;
+    color:#CD0027
+}
+.approve{
+    width: 7px;
+    height: 7px;
+    background: #409261;
+    border-radius: 50px;
+}
+.pending{
+    width: 7px;
+    height: 7px;
+    background: #D98634;
+    border-radius: 50px;
+}
+.reject{
+    width: 7px;
+    height: 7px;
+    background: #CD0027;
+    border-radius: 50px;
 }
 .card-upload {
     border: 2px dashed #dee2e6;
