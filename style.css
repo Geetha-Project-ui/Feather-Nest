@@ -153,11 +153,11 @@ form {
     box-shadow: unset;
 }
 /* Dashboard */
-
 .sidebar {
-    background: linear-gradient(180deg, #014C82 0%, #019CAD 100%);
+    background: linear-gradient(360deg, #5ABA8A 0%, #238E96 46%, #044460 100%);
     color: white;
     min-height: 100vh;
+    padding: 20px 0;
 }
 .sidebar .nav-link {
     color: white;
@@ -169,43 +169,119 @@ form {
     border-radius: 8px;
 }
 .header {
-    background-color: #f8f9fa;
+    background-color: #ffffff;
     border-bottom: 1px solid #dee2e6;
     padding: 15px 30px;
+    margin: 0 -12px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
-.header .btn-link {
+.header .btn-notify {
+    background: #5ABA8A;
+    width: 60px;
+    height:60px;
+    border-radius: 16px;
     color: #495057;
     position: relative;
 }
-.header .btn-link .badge {
+.header .btn-notify img{
+    width: 24px;
+    height:24px
+}
+.header .btn-notify .badge {
+    border-radius: 32px;
+    color: #000;
     position: absolute;
+    background: #E1F296;
     top: -10px;
     right: -10px;
+}
+.dashboard-content h2.page-title{
+    color: #1B1B1B;
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 800;
+}
+.avg-card{
+    background: #E1F296;
+    color:#012527;
+}
+.avg-card h6{
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+}
+.avg-card h2{
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 700;
+}
+.dot{
+    top: 7px;
+    right: 11px;
+}
+.card{
+    border:1px solid #D6D5DD;
+    border-radius: 16px;
+}
+.card-header{
+    padding: 11px 17px;
+}
+.card-header span{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 40px;
+    color:#23262F
+}
+.avg-card p{
+    font-size: 12px;
+}
+.avg-card1{
+    background: #71D4A2;
+}
+.avg-card2{
+    background: #A0EBF6;
 }
 .card-custom {
     border: none;
     border-radius: 12px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 .card-header {
     background-color: transparent;
     border-bottom: none;
 }
 .card-header button {
-    background-color: #014C82;
+    background-color: #03565B;
     color: white;
     border: none;
     border-radius: 5px;
+    padding: 5px 15px;
+    font-size: 16px;
 }
-.table thead {
-    background-color: #f8f9fa;
+.table thead tr th{
+    background-color: #EFF8F3;
+    color:#534D59;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 14px 30px;
+}
+.table tbody tr td{
+    font-size: 16px;
+    color:#0A0A0A;
+    line-height: 19px;
+    padding: 14px 30px;
 }
 .badge-custom {
     padding: 5px 10px;
     border-radius: 5px;
+    font-size: 12px;
 }
 .badge-success {
     background-color: #28a745;
@@ -220,22 +296,35 @@ form {
     border: 2px dashed #dee2e6;
     border-radius: 12px;
     text-align: center;
-    padding: 30px;
+    padding: 100px 30px;
+    margin-bottom: 20px;
 }
 .card-upload p {
     color: #495057;
     font-weight: 500;
+    margin-bottom: 15px;
 }
 .card-upload button {
     background-color: #014C82;
     color: white;
     border: none;
     border-radius: 5px;
+    padding: 10px 20px;
 }
 .chart-container {
     position: relative;
     margin: auto;
     height: 200px;
+}
+.rounded-circle {
+    border: 2px solid #ffffff;
+}
+.welcome-text {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.grey{
+    color:#666666
 }
 @media(max-width:1024px){
     .sign-in-form{

@@ -9,122 +9,17 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Urbanist', sans-serif;
-            background-color: #f8f9fa;
-        }
-        .sidebar {
-            background: linear-gradient(180deg, #014C82 0%, #019CAD 100%);
-            color: white;
-            min-height: 100vh;
-            padding: 20px 0;
-        }
-        .sidebar .nav-link {
-            color: white;
-            font-weight: 500;
-            margin: 10px 0;
-        }
-        .sidebar .nav-link.active {
-            background-color: rgba(255, 255, 255, 0.2);
-            border-radius: 8px;
-        }
-        .header {
-            background-color: #ffffff;
-            border-bottom: 1px solid #dee2e6;
-            padding: 15px 30px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-        .header .btn-link {
-            color: #495057;
-            position: relative;
-        }
-        .header .btn-link .badge {
-            position: absolute;
-            top: -10px;
-            right: -10px;
-        }
-        .card-custom {
-            border: none;
-            border-radius: 12px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
-        }
-        .card-header {
-            background-color: transparent;
-            border-bottom: none;
-        }
-        .card-header button {
-            background-color: #014C82;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            padding: 5px 15px;
-        }
-        .table thead {
-            background-color: #f8f9fa;
-        }
-        .badge-custom {
-            padding: 5px 10px;
-            border-radius: 5px;
-            font-size: 12px;
-        }
-        .badge-success {
-            background-color: #28a745;
-        }
-        .badge-warning {
-            background-color: #ffc107;
-        }
-        .badge-danger {
-            background-color: #dc3545;
-        }
-        .card-upload {
-            border: 2px dashed #dee2e6;
-            border-radius: 12px;
-            text-align: center;
-            padding: 100px 30px;
-            margin-bottom: 20px;
-        }
-        .card-upload p {
-            color: #495057;
-            font-weight: 500;
-            margin-bottom: 15px;
-        }
-        .card-upload button {
-            background-color: #014C82;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            padding: 10px 20px;
-        }
-        .chart-container {
-            position: relative;
-            margin: auto;
-            height: 200px;
-        }
-        .rounded-circle {
-            border: 2px solid #ffffff;
-        }
-        .welcome-text {
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid dashboard-content">
         <div class="row">
             <!-- Sidebar -->
             <div class="col-md-2 sidebar d-flex flex-column align-items-center">
                 <div class="my-4">
                     <img src="image/logo.svg" alt="Feather Nest Logo" class="img-fluid mb-3">
                 </div>
-                <nav class="nav flex-column text-center w-100">
+                <nav class="nav flex-column w-100">
                     <a class="nav-link active" href="#"><i class="fas fa-home"></i> Dashboard</a>
                     <a class="nav-link" href="#"><i class="fas fa-project-diagram"></i> Projects</a>
                     <a class="nav-link" href="#"><i class="fas fa-check-circle"></i> Approvals</a>
@@ -137,57 +32,81 @@
             <div class="col-md-10">
                 <!-- Header -->
                 <header class="header">
-                    <span class="welcome-text">Welcome Shivam!</span>
+                    <span class="welcome-text"><span class="grey">Welcome</span> Shivam!</span>
                     <div class="d-flex align-items-center">
-                        <button class="btn btn-link position-relative">
-                            <i class="fas fa-bell"></i>
-                            <span class="badge bg-danger">6</span>
-                        </button>
-                        <img src="image/profile.svg" alt="Profile" class="img-fluid rounded-circle" width="40">
+                        <div class="btn-notify position-relative d-flex justify-content-center align-items-center me-3">
+                            <img src="./image/bell.svg" class="img-fluid"/>
+                            <span class="badge">6</span>
+                        </div>
+                        <div class="btn-notify position-relative  d-flex justify-content-center align-items-center">
+                            <img src="./image/memoji.svg" class="img-fluid"/>
+                        </div>
+                        
                     </div>
                 </header>
 
                 <!-- Dashboard Content -->
-                <div class="container-fluid">
+                <div class="container-fluid pt-3">
                     <div class="row">
+                        <div class="col-md-12">
+                            <h2 class="page-title">Dashboard</h2>
+                        </div>
                         <div class="col-md-8">
                         <div class="row my-3">
                             <!-- Cards -->
                             <div class="col-md-4">
-                                <div class="card text-center card-custom mb-3">
-                                    <div class="card-body">
-                                        <h6>Total users</h6>
-                                        <h2>43</h2>
-                                        <p class="text-success">+10.1%</p>
+                                <div class="card card-custom avg-card mb-3">
+                                    <div class="card-body d-flex justify-content-between align-items-end">
+                                        <div class="dot position-absolute"><img src="./image/dots.svg"/></div> 
+                                      <div class="d-flex flex-column justify-content-between">
+                                        <h6 class="mb-3">Total users</h6>
+                                        <h2 class="mb-0">43</h2>
+                                      </div>
+                                      <div class="d-flex flex-column justify-content-between">
+                                   
+                                        <p class="mb-0">+10.1%</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-4">
-                                <div class="card text-center card-custom mb-3">
-                                    <div class="card-body">
-                                        <h6>Total Collection</h6>
-                                        <h2>12</h2>
-                                        <p class="text-success">+10.1%</p>
+                                <div class="card card-custom avg-card avg-card1 mb-3">
+                                    <div class="card-body d-flex justify-content-between align-items-end">
+                                        <div class="dot position-absolute"><img src="./image/dots.svg"/></div> 
+                                      <div class="d-flex flex-column justify-content-between">
+                                        <h6 class="mb-3">Total Collections</h6>
+                                        <h2 class="mb-0">12</h2>
+                                      </div>
+                                      <div class="d-flex flex-column justify-content-between">
+                                   
+                                        <p class="mb-0">+10.1%</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-4">
-                                <div class="card text-center card-custom mb-3">
-                                    <div class="card-body">
-                                        <h6>Total Properties</h6>
-                                        <h2>12</h2>
-                                        <p class="text-success">+10.1%</p>
+                                <div class="card card-custom avg-card avg-card2 mb-3">
+                                    <div class="card-body d-flex justify-content-between align-items-end">
+                                        <div class="dot position-absolute"><img src="./image/dots.svg"/></div> 
+                                      <div class="d-flex flex-column justify-content-between">
+                                        <h6 class="mb-3">Total Properties</h6>
+                                        <h2 class="mb-0">12</h2>
+                                      </div>
+                                      <div class="d-flex flex-column justify-content-between">
+                                   
+                                        <p class="mb-0">+10.1%</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
             <!-- Projects Table -->
-            <div class="card card-custom mb-3">
+            <div class="card mb-3">
                 <div class="card-header d-flex justify-content-between align-items-center">
                     <span>Projects</span>
                     <button class="btn btn-sm">View All</button>
-                </div>
-                <div class="card-body">
+                </div> 
+                <div class="card-body p-0">
                     <table class="table">
                         <thead>
                             <tr>
