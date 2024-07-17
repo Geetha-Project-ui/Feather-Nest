@@ -336,11 +336,11 @@ form {
     border-radius: 50px;
 }
 .card-upload {
-    border: 2px dashed #dee2e6;
-    border-radius: 12px;
+    border: 2px dashed rgba(203, 208, 220, 1);
+    border-radius: 13px;
     text-align: center;
     padding: 100px 30px;
-    margin-bottom: 20px;
+    margin: 20px;
 }
 .card-upload p {
     color: #495057;
