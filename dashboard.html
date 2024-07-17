@@ -15,17 +15,33 @@
     <div class="container-fluid dashboard-content">
         <div class="row">
             <!-- Sidebar -->
-            <div class="col-md-2 sidebar d-flex flex-column align-items-center">
-                <div class="my-4">
-                    <img src="image/logo.svg" alt="Feather Nest Logo" class="img-fluid mb-3">
+            <div class="col-md-2 sidebar d-flex flex-column align-items-center position-relative">
+                <div class="dotted-gif">
+                    <img src="./image/doted-icon.svg"/>
+                </div>
+                <div class="feather-logo d-flex justify-content-between w-100">
+              
+                    <img src="image/dashboard-logo.svg" alt="Feather Nest Logo" class="img-fluid mb-3">
+                    <div class="menu-logo">
+                        <img src="./image/menu.svg"/>
+                    </div>
                 </div>
                 <nav class="nav flex-column w-100">
-                    <a class="nav-link active" href="#"><i class="fas fa-home"></i> Dashboard</a>
-                    <a class="nav-link" href="#"><i class="fas fa-project-diagram"></i> Projects</a>
-                    <a class="nav-link" href="#"><i class="fas fa-check-circle"></i> Approvals</a>
-                    <a class="nav-link" href="#"><i class="fas fa-exchange-alt"></i> Transactions</a>
-                    <a class="nav-link" href="#"><i class="fas fa-users"></i> Employee Details</a>
+                    <a class="nav-link d-flex align-items-center active" href="#">
+                       <div class="icon me-3"><img src="./image/project.svg" class="img-fluid"/></div>
+                        Dashboard</a>
+                    <a class="nav-link d-flex align-items-center" href="#">
+                        <div class="icon me-3"><img src="./image/project.svg" class="img-fluid"/></div>
+                     Projects</a>
+                    <a class="nav-link d-flex align-items-center" href="#"> 
+                         <div class="icon me-3"><img src="./image/project.svg" class="img-fluid"/></div>
+                     Approvals</a>
+                    <a class="nav-link d-flex align-items-center" href="#">  <div class="icon me-3"><img src="./image/project.svg" class="img-fluid"/></div> Transactions</a>
+                    <a class="nav-link d-flex align-items-center" href="#">  <div class="icon me-3"><img src="./image/project.svg" class="img-fluid"/></div> Employee Details</a>
                 </nav>
+                <div class="sideimage">
+                    <img src="./image/sidebar-image.svg" class="img-fluid"/>
+                </div>
             </div>
 
             <!-- Main Content -->

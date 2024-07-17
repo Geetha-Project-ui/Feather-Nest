@@ -157,16 +157,34 @@ form {
     background: linear-gradient(360deg, #5ABA8A 0%, #238E96 46%, #044460 100%);
     color: white;
     min-height: 100vh;
-    padding: 20px 0;
 }
 .sidebar .nav-link {
-    color: white;
+    color: rgba(191, 203, 212, 1);
+    font-size: 18px;
     font-weight: 500;
-    margin: 10px 0;
+    line-height: 21px;
+    margin-bottom: 32px;
 }
 .sidebar .nav-link.active {
+    font-size: 22px;
+    font-weight: 800;
+    color:#fff;
+    line-height: 26px;
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 8px;
+}
+.feather-logo{
+    padding: 30px 0px;
+}
+.dotted-gif{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.sideimage{
+    position: absolute;
+    bottom: 0;
 }
 .header {
     background-color: #ffffff;
