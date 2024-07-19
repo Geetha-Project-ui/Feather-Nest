@@ -166,12 +166,35 @@ form {
     margin-bottom: 32px;
 }
 .sidebar .nav-link.active {
-    font-size: 22px;
-    font-weight: 800;
-    color:#fff;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
     line-height: 26px;
-    background-color: rgba(255, 255, 255, 0.2);
     border-radius: 8px;
+    position: relative;
+}
+.sidebar .nav-link.active .icon{
+    z-index: 999;
+}
+.sidebar .nav-link.active span{
+    position: relative;
+    left: 10px;
+}
+.sidebar .nav-link.active::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    max-width: 62px;
+    height: 45px;
+    left: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #ffffff00, #5ABA8A);
+    visibility: visible;
+    border-radius: 0 30px 30px 0;
+    position: absolute;
+    left: -11px;
+    margin: 0 auto;
+    z-index: 0;
 }
 .feather-logo{
     padding: 30px 0px;
