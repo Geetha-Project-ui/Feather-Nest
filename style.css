@@ -167,23 +167,35 @@ form {
    
 }
 .sidebar .nav-link.active {
-    font-size: 22px;
-    font-weight: 800;
-    color:#fff;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
     line-height: 26px;
+    border-radius: 8px;
+    position: relative;
 }
-.sidebar .nav-link.active .icon::after{
+.sidebar .nav-link.active .icon{
+    z-index: 999;
+}
+.sidebar .nav-link.active span{
+    position: relative;
+    left: 10px;
+}
+.sidebar .nav-link.active::before {
     content: '';
     position: absolute;
-    background: linear-gradient(270deg, #E1F296 0%, rgba(225, 242, 150, 0) 100%);
-    border-radius: 0px 32px 32px 0px;
-    width: 62px;
-    height: 40px;
+    width: 100%;
+    max-width: 62px;
+    height: 45px;
     left: 0;
-    margin-top: -4px;
-}
-.icon{
-    color:rgba(2, 86, 91, 1)
+    left: 0;
+    background-image: linear-gradient(to right, #ffffff00, #5ABA8A);
+    visibility: visible;
+    border-radius: 0 30px 30px 0;
+    position: absolute;
+    left: -11px;
+    margin: 0 auto;
+    z-index: 0;
 }
 .feather-logo{
     padding: 30px 0px;
