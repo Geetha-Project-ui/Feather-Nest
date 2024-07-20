@@ -167,19 +167,21 @@
                     </table>
                 </div>
             </div>
-
-
-
                     <!-- Employee Expense -->
                     <div class="card mt-3">
                         <div class="card-header d-flex justify-content-between align-items-center">
-                            <span>Employee Expense</span>
-                        
+                            <span>Employee Expense</span>                  
                         </div> 
                         <div class="card-body">
-                            <div class="chart-container">
+                            <figure class="highcharts-figure">
+                                <div id="container"></div>
+                            </figure>
+                            <!-- <div class="chart-container">
                                 <canvas id="employee-expense-chart"></canvas>
-                            </div>
+                                <figure class="highcharts-figure">
+                                    <div id="container"></div>
+                                </figure>
+                            </div> -->
                         </div>
                     </div>
                     </div>
@@ -200,7 +202,11 @@
                         </div> 
                         <div class="card-body">
                             <div class="chart-container">
-                                <canvas id="cost-to-company-chart"></canvas>
+                                <!-- <canvas id="cost-to-company-chart"></canvas> -->
+                                <figure class="highcharts-figure">
+                                    <div id="container-pie"></div>
+                                </figure>
+                                
                             </div>
                         </div>
                     </div>
@@ -213,32 +219,141 @@
 
     <!-- Bootstrap JS and Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script>
-        const ctx1 = document.getElementById('cost-to-company-chart').getContext('2d');
-        const costToCompanyChart = new Chart(ctx1, {
-            type: 'doughnut',
-            data: {
-                labels: ['Project', 'Construction', 'Employee', 'Other'],
-                datasets: [{
-                    data: [33, 33, 20.7, 33],
-                    backgroundColor: ['#42a5f5', '#66bb6a', '#ffca28', '#ef5350'],
-                }]
-            },
-        });
 
-        const ctx2 = document.getElementById('employee-expense-chart').getContext('2d');
-        const employeeExpenseChart = new Chart(ctx2, {
-            type: 'bar',
-            data: {
-                labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-                datasets: [{
-                    label: 'Expense',
-                    data: [10, 9, 8, 7, 6, 5, 4],
-                    backgroundColor: '#42a5f5',
-                }]
-            },
-        });
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script>
+        Highcharts.chart('container', {
+    chart: {
+        type: 'column'
+    },
+    xAxis: {
+        categories: ['USA', 'China', 'Brazil', 'EU', 'Argentina', 'India'],
+        crosshair: true,
+        accessibility: {
+            description: 'Countries'
+        }
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: '1000 metric tons (MT)'
+        }
+    },
+    tooltip: {
+        valueSuffix: ' (1000 MT)'
+    },
+    plotOptions: {
+        column: {
+            pointPadding: 0.2,
+            borderWidth: 0
+        }
+    },
+    series: [
+        {
+            name: 'Corn',
+            data: [387749, 280000, 129000, 64300, 54000, 34300]
+        },
+        {
+            name: 'Wheat',
+            data: [45321, 140000, 10000, 140500, 19500, 113500]
+        }
+    ]
+});
+
+Highcharts.chart('container-pie', {
+    chart: {
+        type: 'pie',
+        custom: {},
+        events: {
+            render() {
+                const chart = this,
+                    series = chart.series[0];
+                let customLabel = chart.options.chart.custom.label;
+
+                if (!customLabel) {
+                    customLabel = chart.options.chart.custom.label =
+                        chart.renderer.label(
+                            'Total<br/>' +
+                            '<strong>2 877 820</strong>'
+                        )
+                            .css({
+                                color: '#000',
+                                textAnchor: 'middle'
+                            })
+                            .add();
+                }
+
+                const x = series.center[0] + chart.plotLeft,
+                    y = series.center[1] + chart.plotTop -
+                    (customLabel.attr('height') / 2);
+
+                customLabel.attr({
+                    x,
+                    y
+                });
+                // Set font size based on chart diameter
+                customLabel.css({
+                    fontSize: `${series.center[2] / 12}px`
+                });
+            }
+        }
+    },
+    accessibility: {
+        point: {
+            valueSuffix: '%'
+        }
+    },
+
+    tooltip: {
+        pointFormat: '{series.name}: <b>{point.percentage:.0f}%</b>'
+    },
+    legend: {
+        enabled: false
+    },
+    plotOptions: {
+        series: {
+            allowPointSelect: true,
+            cursor: 'pointer',
+            borderRadius: 8,
+            dataLabels: [{
+                enabled: true,
+                distance: 20,
+                format: '{point.name}'
+            }, {
+                enabled: true,
+                distance: -15,
+                format: '{point.percentage:.0f}%',
+                style: {
+                    fontSize: '0.9em'
+                }
+            }],
+            showInLegend: true
+        }
+    },
+    series: [{
+        name: 'Registrations',
+        colorByPoint: true,
+        innerSize: '75%',
+        data: [{
+            name: 'EV',
+            y: 23.9
+        }, {
+            name: 'Hybrids',
+            y: 12.6
+        }, {
+            name: 'Diesel',
+            y: 37.0
+        }, {
+            name: 'Petrol',
+            y: 26.4
+        }]
+    }]
+});
+
+
     </script>
 </body>
 </html>
