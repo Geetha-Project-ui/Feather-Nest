@@ -156,7 +156,7 @@ form {
 .sidebar {
     background: linear-gradient(360deg, #5ABA8A 0%, #238E96 46%, #044460 100%);
     color: white;
-    min-height: 100vh;
+    height: 100vh;
 }
 .sidebar .nav-link {
     color: rgba(191, 203, 212, 1);
@@ -247,6 +247,10 @@ form {
     font-size: 32px;
     line-height: 38px;
     font-weight: 800;
+}
+.leftside{
+    height: 100vh;
+    overflow-y: auto;
 }
 .avg-card{
     background: #E1F296;
