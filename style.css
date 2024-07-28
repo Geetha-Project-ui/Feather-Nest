@@ -310,6 +310,9 @@ form {
     padding: 5px 15px;
     font-size: 16px;
 }
+.table{
+    margin-bottom: 0;
+}
 .table thead tr th{
     background-color: #EFF8F3;
     color:#534D59;
@@ -317,6 +320,21 @@ form {
     font-size: 14px;
     line-height: 16px;
     padding: 14px 30px;
+}
+.table thead tr th:first-child{
+    border-radius: 16px 0 0;
+}
+.table thead tr th:last-child{
+border-radius: 0 16px 0 0;
+}
+.table tbody tr:last-child td:first-child{
+    border-radius: 0 0 0 16px;
+}
+.table tbody tr:last-child td:last-child{
+    border-radius:0 0 16px 0;
+}
+.table tbody tr:last-child{
+    border-bottom: 0px solid transparent;
 }
 .table tbody tr td{
     font-size: 16px;
