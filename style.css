@@ -224,11 +224,13 @@ form {
 }
 .header .btn-notify {
     background: #5ABA8A;
-    width: 60px;
-    height:60px;
     border-radius: 16px;
     color: #495057;
     position: relative;
+}
+.header .btn-notify a.dropdown-toggle{
+    width: 60px;
+    height:60px;
 }
 .header .btn-notify img{
     width: 24px;
