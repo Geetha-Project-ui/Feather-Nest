@@ -205,6 +205,14 @@ form {
     top: 0;
     left: 0;
     right: 0;
+    height: 100px;
+    overflow: hidden;
+}
+.dotted-gif img{
+    width: 215px;
+    rotate: 90deg;
+    position: absolute;
+    top: -210px;
 }
 .sideimage{
     position: absolute;
@@ -344,6 +352,43 @@ border-radius: 0 16px 0 0;
     line-height: 19px;
     padding: 14px 30px;
 }
+.table tbody tr td .tag {
+    font-weight: 700;
+    padding: 8px 16px;
+    border-radius: 32px;
+    font-size: 12px;
+}
+.table tbody tr td .tag .dot{
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    border-radius: 32px;
+    margin-right: 8px;
+}
+.table tbody tr td .success_tag{
+    background: #DAFAE3;
+    color: #409261;
+}
+.table tbody tr td .tag .success_dot{
+    background-color:  #409261;
+}
+.table tbody tr td .pending_tag{
+    background: #FFF2DD;
+    color: #D98634;
+}
+.table tbody tr td .tag .pending_dot{
+    background-color:  #D98634;
+}
+.table tbody tr td .error_tag{
+    background: #FEE6EA;
+    color: #CD0027;
+}
+.table tbody tr td .tag .error_dot{
+    background-color:  #CD0027;
+}
+.table tbody tr td .action_icon a{
+    color: #0A0A0A !important;
+}
 .badge-custom {
     padding: 8px 12px;
     border-radius: 50px;
@@ -432,14 +477,20 @@ border-radius: 0 16px 0 0;
     box-shadow: 0px 4px 19px 9px #275F431A;
     border: 0;
     padding: 0;
+    border-radius: 20px;
 }
+
 .dropdown-item{
     border-bottom: 1px solid #E1E1E1;
-    font-size: 12px;
-    font-weight: 600;
-    line-height: 14px;
-    padding: 16px
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    padding: 16px 16px;
 }
+.dropdown-menu li:last-child a{
+    border: none !important;
+}
+
 .highcharts-figure,
 .highcharts-data-table table {
     min-width: 310px;
