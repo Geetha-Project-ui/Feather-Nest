@@ -248,6 +248,19 @@ form {
     position: absolute;
     bottom: 0;
 }
+.sideimage .image_block{
+    position: relative;
+}
+.sideimage .image_block .cloud_img{
+    position: absolute;
+    top: 0;
+}
+.sideimage .image_block .tree{
+    position: absolute;
+    bottom: 0;
+}
+
+
 .header {
     background-color: #ffffff;
     border-bottom: 1px solid #dee2e6;
