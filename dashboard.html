@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
     <div class="container-fluid dashboard-content">
@@ -31,14 +30,16 @@
                     <a class="nav-link d-flex align-items-center active" href="dashboard.html">
                        <div class="icon me-3"><img src="./image/project.svg" class="img-fluid"/></div>
                         <span>Dashboard</span></a>
-                    <a class="nav-link d-flex align-items-center" href="projects.html">
+                    <a class="nav-link d-flex align-items-center " href="projects.html">
                         <div class="icon me-3"><img src="./image/project.svg" class="img-fluid"/></div>
                      <span>Projects</span></a>
                     <a class="nav-link d-flex align-items-center" href="approvals.html"> 
                          <div class="icon me-3"><img src="./image/project.svg" class="img-fluid"/></div>
                      <span>Approvals</span></a>
-                    <a class="nav-link d-flex align-items-center" href="transactions.html">  <div class="icon me-3"><img src="./image/project.svg" class="img-fluid"/></div> <span>Transactions</span></a>
-                    <a class="nav-link d-flex align-items-center" href="#sidebarDashboards" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarDashboards">  <div class="icon me-3"><img src="./image/project.svg" class="img-fluid"/></div> <span>Employee Details</span></a>
+                    <a class="nav-link d-flex align-items-center" href="transactions.html">  
+                        <div class="icon me-3"><img src="./image/project.svg" class="img-fluid"/></div> <span>Transactions</span></a>
+                    <a class="nav-link d-flex align-items-center" href="#sidebarDashboards" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarDashboards"> 
+                         <div class="icon me-3"><img src="./image/project.svg" class="img-fluid"/></div> <span>Employee Details</span></a>
 
                     <div class="collapse show collapse_sub_nav" id="sidebarDashboards">
                         <ul class="nav flex-column">
@@ -120,80 +121,153 @@
                 <!-- Dashboard Content -->
                 <div class="container-fluid pt-3">
                     <div class="row">
-                        <div class="col-md-6">
-                            <h2 class="page-title">Approvals</h2>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card-header d-flex justify-content-end p-0">
-                                <button class="btn btn-sm"><svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M19.5 11H13.5V5C13.5 4.73478 13.3946 4.48043 13.2071 4.29289C13.0196 4.10536 12.7652 4 12.5 4C12.2348 4 11.9804 4.10536 11.7929 4.29289C11.6054 4.48043 11.5 4.73478 11.5 5V11H5.5C5.23478 11 4.98043 11.1054 4.79289 11.2929C4.60536 11.4804 4.5 11.7348 4.5 12C4.5 12.2652 4.60536 12.5196 4.79289 12.7071C4.98043 12.8946 5.23478 13 5.5 13H11.5V19C11.5 19.2652 11.6054 19.5196 11.7929 19.7071C11.9804 19.8946 12.2348 20 12.5 20C12.7652 20 13.0196 19.8946 13.2071 19.7071C13.3946 19.5196 13.5 19.2652 13.5 19V13H19.5C19.7652 13 20.0196 12.8946 20.2071 12.7071C20.3946 12.5196 20.5 12.2652 20.5 12C20.5 11.7348 20.3946 11.4804 20.2071 11.2929C20.0196 11.1054 19.7652 11 19.5 11Z" fill="white"/>
-                                    </svg>
-                                     Create New</button>
-                            </div> 
-                        </div>
-
                         <div class="col-md-12">
-
+                            <h2 class="page-title">Dashboard</h2>
+                        </div>
+                        <div class="col-md-8">
+                        <div class="row my-3">
+                            <!-- Cards -->
+                            <div class="col-md-4">
+                                <div class="card card-custom avg-card mb-3">
+                                    <div class="card-body d-flex justify-content-between align-items-end">
+                                        <div class="dot position-absolute"><img src="./image/dots.svg"/></div> 
+                                      <div class="d-flex flex-column justify-content-between">
+                                        <h6 class="mb-3">Total users</h6>
+                                        <h2 class="mb-0">43</h2>
+                                      </div>
+                                      <div class="d-flex flex-column justify-content-between">
+                                   
+                                        <p class="mb-0">+10.1%</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card card-custom avg-card avg-card1 mb-3">
+                                    <div class="card-body d-flex justify-content-between align-items-end">
+                                        <div class="dot position-absolute"><img src="./image/dots.svg"/></div> 
+                                      <div class="d-flex flex-column justify-content-between">
+                                        <h6 class="mb-3">Total Collections</h6>
+                                        <h2 class="mb-0">12</h2>
+                                      </div>
+                                      <div class="d-flex flex-column justify-content-between">
+                                   
+                                        <p class="mb-0">+10.1%</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card card-custom avg-card avg-card2 mb-3">
+                                    <div class="card-body d-flex justify-content-between align-items-end">
+                                        <div class="dot position-absolute"><img src="./image/dots.svg"/></div> 
+                                      <div class="d-flex flex-column justify-content-between">
+                                        <h6 class="mb-3">Total Properties</h6>
+                                        <h2 class="mb-0">12</h2>
+                                      </div>
+                                      <div class="d-flex flex-column justify-content-between">
+                                   
+                                        <p class="mb-0">+10.1%</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
             <!-- Projects Table -->
             <div class="card mb-3">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <span>Projects</span>
+                    <button class="btn btn-sm">View All</button>
+                </div> 
                 <div class="card-body p-0">
                     <table class="table">
                         <thead>
                             <tr>
                                 <th>Project ID</th>
-                                <th>Name</th>
-                                <th>Flat no.</th>
-                                <th>Costomer name</th>
+                                <th>Revenue</th>
+                                <th>Completion</th>
                                 <th>Status</th>
-                                <th>Est. Completion</th>
-                                <th>Approve status</th>
-                                <th>Actions</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>12SD</td>
-                                <td>Ram Niwas</td>
-                                <td>102</td>
-                                <td>Shivam</td>
-                                <td>RO</td>
-                                <td>12-oct-2024</td>
-                                <td><span class="tag success_tag"> <span class="dot success_dot"></span>Approved</span></td>
-                                <td><span class="action_icon">
-                                        <a class="dropdown-toggle  align-items-center justify-content-center" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <i class="bi bi-sliders"></i>
-                                        </a>
-                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                            <li><a class="dropdown-item" href="#">Edit</a></li>
-                                          </ul>
-                                        </span></td>
+                                <td>₹ 12 CR</td>
+                                <td>23%</td>
+                                <td><div class="badge badge-custom badge-success d-flex align-items-center justify-content-center"><div class="approve me-2"></div>Approved</div></td>
                             </tr>
                             <tr>
                                 <td>12SD</td>
-                                <td>Ram Niwas</td>
-                                <td>102</td>
-                                <td>Shivam</td>
-                                <td>RO</td>
-                                <td>12-oct-2024</td>
-                                <td><span class="tag pending_tag"> <span class="dot pending_dot"></span>Pending</span></td>
-                                <td><span data-bs-toggle="modal" data-bs-target="#exampleModal" class="action_icon"><i class="bi bi-sliders"></i></td></span>
+                                <td>₹ 12 CR</td>
+                                <td>23%</td>
+                                <td><div class="badge badge-custom badge-warning d-flex align-items-center justify-content-center"><div class="pending me-2"></div>Pending</div></td>
                             </tr>
                             <tr>
                                 <td>12SD</td>
-                                <td>Ram Niwas</td>
-                                <td>102</td>
-                                <td>Shivam</td>
-                                <td>RO</td>
-                                <td>12-oct-2024</td>
-                                <td><span class="tag error_tag"> <span class="dot error_dot"></span>Rejected</span></td>
-                                <td><span data-bs-toggle="modal" data-bs-target="#exampleModal" class="action_icon"><i class="bi bi-sliders"></i></td>
+                                <td>₹ 12 CR</td>
+                                <td>23%</td>
+                                <td><div class="badge badge-custom badge-danger d-flex align-items-center justify-content-center"><div class="reject me-2"></div>Rejected</div></td>
+                            </tr>
+                            <tr>
+                                <td>12SD</td>
+                                <td>₹ 12 CR</td>
+                                <td>23%</td>
+                                <td><div class="badge badge-custom badge-success d-flex align-items-center justify-content-center"><div class="approve me-2"></div>Approved</div></td>
+                            </tr>
+                            <tr>
+                                <td>12SD</td>
+                                <td>₹ 12 CR</td>
+                                <td>23%</td>
+                                <td><div class="badge badge-custom badge-success d-flex align-items-center justify-content-center"><div class="approve me-2"></div>Approved</div></td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
+                    <!-- Employee Expense -->
+                    <div class="card mt-3">
+                        <div class="card-header d-flex justify-content-between align-items-center">
+                            <span>Employee Expense</span>                  
+                        </div> 
+                        <div class="card-body">
+                            <figure class="highcharts-figure">
+                                <div id="container"></div>
+                            </figure>
+                            <!-- <div class="chart-container">
+                                <canvas id="employee-expense-chart"></canvas>
+                                <figure class="highcharts-figure">
+                                    <div id="container"></div>
+                                </figure>
+                            </div> -->
+                        </div>
                     </div>
-
+                    </div>
+                    <div class="col-md-4">
+                    <!-- File Upload and Cost to Company -->
+                    <div class="card card-custom">
+                        <div class="card-upload">
+                            <p>Choose a file or drag & drop it here</p>
+                            <p class="upload-grey">JPEG, PNG, PDG, and MP4 formats, up to 50MB</p>
+                            <button class="btn">Browse File</button>
+                        </div>
+                      
+                    </div>
+                    <div class="card">
+                        <div class="card-header d-flex justify-content-between align-items-center">
+                            <span>Cost to Company</span>
+                        
+                        </div> 
+                        <div class="card-body">
+                            <div class="chart-container">
+                                <!-- <canvas id="cost-to-company-chart"></canvas> -->
+                                <figure class="highcharts-figure">
+                                    <div id="container-pie"></div>
+                                </figure>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    </div>
                 </div>
                 </div>
             </div>
