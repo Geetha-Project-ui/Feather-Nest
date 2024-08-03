@@ -28,17 +28,28 @@
                     </div>
                 </div>
                 <nav class="nav flex-column w-100">
-                    <a class="nav-link d-flex align-items-center" href="dashboard.html">
+                    <a class="nav-link d-flex align-items-center " href="dashboard.html">
                        <div class="icon me-3"><img src="./image/project.svg" class="img-fluid"/></div>
                         <span>Dashboard</span></a>
                     <a class="nav-link d-flex align-items-center" href="projects.html">
                         <div class="icon me-3"><img src="./image/project.svg" class="img-fluid"/></div>
-                     Projects</a>
-                    <a class="nav-link d-flex align-items-center active" href="#"> 
+                     <span>Projects</span></a>
+                    <a class="nav-link d-flex align-items-center active" href="approvals.html"> 
                          <div class="icon me-3"><img src="./image/project.svg" class="img-fluid"/></div>
-                     Approvals</a>
-                    <a class="nav-link d-flex align-items-center" href="#">  <div class="icon me-3"><img src="./image/project.svg" class="img-fluid"/></div> Transactions</a>
-                    <a class="nav-link d-flex align-items-center" href="#">  <div class="icon me-3"><img src="./image/project.svg" class="img-fluid"/></div> Employee Details</a>
+                     <span>Approvals</span></a>
+                    <a class="nav-link d-flex align-items-center" href="transactions.html">  <div class="icon me-3"><img src="./image/project.svg" class="img-fluid"/></div> <span>Transactions</span></a>
+                    <a class="nav-link d-flex align-items-center" href="#sidebarDashboards" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarDashboards">  <div class="icon me-3"><img src="./image/project.svg" class="img-fluid"/></div> <span>Employee Details</span></a>
+
+                    <div class="collapse show collapse_sub_nav" id="sidebarDashboards">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link sub_nav_link" href="salesteam.html">Sales Team</a>
+                            </li><!--end nav-item-->
+                            <li class="nav-item">
+                                <a class="nav-link sub_nav_link" href="contractor.html">Contractor</a>
+                            </li><!--end nav-item-->
+                        </ul><!--end nav-->
+                    </div>
                 </nav>
                 <div class="sideimage">
                     <img src="./image/sidebar-image.svg" class="img-fluid"/>
@@ -166,7 +177,15 @@
                                 <td>RO</td>
                                 <td>12-oct-2024</td>
                                 <td><span class="tag pending_tag"> <span class="dot pending_dot"></span>Pending</span></td>
-                                <td><span data-bs-toggle="modal" data-bs-target="#exampleModal" class="action_icon"><i class="bi bi-sliders"></i></td></span>
+                                <td><span class="action_icon">
+                                    <a class="dropdown-toggle  align-items-center justify-content-center" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="bi bi-sliders"></i>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li data-bs-toggle="modal" data-bs-target="#exampleModal"><a class="dropdown-item" href="#">Edit</a></li>
+                                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                                      </ul>
+                                    </span></td>
                             </tr>
                             <tr>
                                 <td>12SD</td>
@@ -176,7 +195,15 @@
                                 <td>RO</td>
                                 <td>12-oct-2024</td>
                                 <td><span class="tag error_tag"> <span class="dot error_dot"></span>Rejected</span></td>
-                                <td><span data-bs-toggle="modal" data-bs-target="#exampleModal" class="action_icon"><i class="bi bi-sliders"></i></td>
+                                <td><span class="action_icon">
+                                    <a class="dropdown-toggle  align-items-center justify-content-center" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="bi bi-sliders"></i>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li data-bs-toggle="modal" data-bs-target="#exampleModal"><a class="dropdown-item" href="#">Edit</a></li>
+                                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                                      </ul>
+                                    </span></td>
                             </tr>
                         </tbody>
                     </table>

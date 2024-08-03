@@ -166,6 +166,17 @@ form {
     margin-bottom: 32px;
    
 }
+
+.sidebar .nav-link:nth-last-child(2) {
+    margin-bottom: 16px;
+}
+.sidebar .nav-link:nth-last-child(1) {
+    margin-bottom: 16px;
+}
+.sidebar .nav-link:nth-last-child(0) {
+    margin-bottom: 16px;
+}
+
 .sidebar .nav-link.active {
     font-size: 18px;
     font-weight: 600;
@@ -196,6 +207,25 @@ form {
     left: -11px;
     margin: 0 auto;
     z-index: 0;
+}
+.sidebar .sub_nav_link.active::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    max-width: 10px;
+    height: 10px;
+    left: 0;
+    left: 0;
+    background: transparent;
+    visibility: visible;
+    border-radius: 30px;
+    position: absolute;
+    left: -15px;
+    margin: 0 auto;
+    z-index: 0;
+    background-color: #03565B;
+    border: 2.5px solid #fff !important;
+    top: 16px;
 }
 .feather-logo{
     padding: 30px 0px;
@@ -678,3 +708,17 @@ border-radius: 0 16px 0 0;
 }
 
 
+#sidebarDashboards ul:before{
+    content: "";
+    position: absolute;
+    top: -10px;
+    bottom: 0px;
+    left: -11px;
+    border: 1px dotted rgba(191, 203, 212, 1);
+   
+}
+
+.collapse_sub_nav ul{ 
+    position: relative;
+    left: 38px;
+}

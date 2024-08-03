@@ -27,17 +27,28 @@
                     </div>
                 </div>
                 <nav class="nav flex-column w-100">
-                    <a class="nav-link d-flex align-items-center active" href="#">
+                    <a class="nav-link d-flex align-items-center active" href="dashboard.html">
                        <div class="icon me-3"><img src="./image/project.svg" class="img-fluid"/></div>
                         <span>Dashboard</span></a>
-                    <a class="nav-link d-flex align-items-center" href="#">
+                    <a class="nav-link d-flex align-items-center" href="projects.html">
                         <div class="icon me-3"><img src="./image/project.svg" class="img-fluid"/></div>
-                     Projects</a>
-                    <a class="nav-link d-flex align-items-center" href="#"> 
+                     <span>Projects</span></a>
+                    <a class="nav-link d-flex align-items-center" href="approvals.html"> 
                          <div class="icon me-3"><img src="./image/project.svg" class="img-fluid"/></div>
-                     Approvals</a>
-                    <a class="nav-link d-flex align-items-center" href="#">  <div class="icon me-3"><img src="./image/project.svg" class="img-fluid"/></div> Transactions</a>
-                    <a class="nav-link d-flex align-items-center" href="#">  <div class="icon me-3"><img src="./image/project.svg" class="img-fluid"/></div> Employee Details</a>
+                     <span>Approvals</span></a>
+                    <a class="nav-link d-flex align-items-center" href="transactions.html">  <div class="icon me-3"><img src="./image/project.svg" class="img-fluid"/></div> <span>Transactions</span></a>
+                    <a class="nav-link d-flex align-items-center" href="#sidebarDashboards" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarDashboards">  <div class="icon me-3"><img src="./image/project.svg" class="img-fluid"/></div> <span>Employee Details</span></a>
+
+                    <div class="collapse show collapse_sub_nav" id="sidebarDashboards">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link sub_nav_link" href="salesteam.html">Sales Team</a>
+                            </li><!--end nav-item-->
+                            <li class="nav-item">
+                                <a class="nav-link sub_nav_link" href="contractor.html">Contractor</a>
+                            </li><!--end nav-item-->
+                        </ul><!--end nav-->
+                    </div>
                 </nav>
                 <div class="sideimage">
                     <img src="./image/sidebar-image.svg" class="img-fluid"/>
