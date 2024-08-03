@@ -52,12 +52,42 @@
                     <div class="d-flex align-items-center">
                         <div class="btn-notify position-relative d-flex justify-content-center align-items-center me-3">
                             <a class="nav-link dropdown-toggle d-flex align-items-center justify-content-center" href="#" id="navbarNotification" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="./image/bell.svg" class="img-fluid"/>
+                            <img src="./image/bell.svg" class="img-fluid bell_img"/>
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarNotification">
-                                <li>Ganesh uploaded few photos from Om Properties, Hyderabad</li>
-                                <li></li>
-                                <li></li>
+                                <li><a class="dropdown-item" href="#">
+                                    <div class="notifiation_dropd_content">
+                                        <div class="intials ac_color_1">
+                                        <span>SG</span>
+                                        </div>
+                                        <div class="data">
+                                            <span>Ganesh uploaded few photos from Om Properties, Hyderabad</span>
+                                            <div class="date_time">10:12 PM , 22 Aug 2022</div>
+                                        </div>
+                                    </div>
+                                </a></li>
+                                <li><a class="dropdown-item" href="#">
+                                    <div class="notifiation_dropd_content">
+                                        <div class="intials ac_color_2">
+                                        <span>NV</span>
+                                        </div>
+                                        <div class="data">
+                                            <span>Ganesh uploaded few photos from Om Properties, Hyderabad</span>
+                                            <div class="date_time">10:12 PM , 22 Aug 2022</div>
+                                        </div>
+                                    </div>
+                                </a></li>
+                                <li><a class="dropdown-item" href="#">
+                                    <div class="notifiation_dropd_content">
+                                        <div class="intials ac_color_3">
+                                        <span>SG</span>
+                                        </div>
+                                        <div class="data">
+                                            <span>Ganesh uploaded few photos from Om Properties, Hyderabad</span>
+                                            <div class="date_time">10:12 PM , 22 Aug 2022</div>
+                                        </div>
+                                    </div>
+                                </a></li>
                               </ul>
                             <span class="badge">6</span>
                         </div>
@@ -79,7 +109,7 @@
                 <div class="container-fluid pt-3">
                     <div class="row">
                         <div class="col-md-6">
-                            <h2 class="page-title">Projects</h2>
+                            <h2 class="page-title">Approvals</h2>
                         </div>
                         <div class="col-md-6">
                             <div class="card-header d-flex justify-content-end p-0">
@@ -100,34 +130,51 @@
                             <tr>
                                 <th>Project ID</th>
                                 <th>Name</th>
-                                <th>Project Type</th>
-                                <th>Date</th>
+                                <th>Flat no.</th>
+                                <th>Costomer name</th>
+                                <th>Status</th>
                                 <th>Est. Completion</th>
-                                <th>Location</th>
-                                <th>Budget</th>
-                                <th>Details</th>
+                                <th>Approve status</th>
+                                <th>Actions</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>12SD</td>
-                                <td>Sachin Bhosle</td>
-                                <td>Gated</td>
-                                <td>12-oct-2023</td>
-                                <td>12-oct-2023</td>
-                                <td>Patancheru</td>
-                                <td>10,00,000</td>
-                                <td><img src="./image/arrow-square-right.svg"/></td>
+                                <td>Ram Niwas</td>
+                                <td>102</td>
+                                <td>Shivam</td>
+                                <td>RO</td>
+                                <td>12-oct-2024</td>
+                                <td><span class="tag success_tag"> <span class="dot success_dot"></span>Approved</span></td>
+                                <td><span class="action_icon">
+                                        <a class="dropdown-toggle  align-items-center justify-content-center" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="bi bi-sliders"></i>
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <li><a class="dropdown-item" href="#">Edit</a></li>
+                                          </ul>
+                                        </span></td>
                             </tr>
                             <tr>
                                 <td>12SD</td>
-                                <td>Sachin Bhosle</td>
-                                <td>Gated</td>
-                                <td>12-oct-2023</td>
-                                <td>12-oct-2023</td>
-                                <td>Patancheru</td>
-                                <td>10,00,000</td>
-                                <td><img src="./image/arrow-square-right.svg"/></td>
+                                <td>Ram Niwas</td>
+                                <td>102</td>
+                                <td>Shivam</td>
+                                <td>RO</td>
+                                <td>12-oct-2024</td>
+                                <td><span class="tag pending_tag"> <span class="dot pending_dot"></span>Pending</span></td>
+                                <td><span data-bs-toggle="modal" data-bs-target="#exampleModal" class="action_icon"><i class="bi bi-sliders"></i></td></span>
+                            </tr>
+                            <tr>
+                                <td>12SD</td>
+                                <td>Ram Niwas</td>
+                                <td>102</td>
+                                <td>Shivam</td>
+                                <td>RO</td>
+                                <td>12-oct-2024</td>
+                                <td><span class="tag error_tag"> <span class="dot error_dot"></span>Rejected</span></td>
+                                <td><span data-bs-toggle="modal" data-bs-target="#exampleModal" class="action_icon"><i class="bi bi-sliders"></i></td>
                             </tr>
                         </tbody>
                     </table>
