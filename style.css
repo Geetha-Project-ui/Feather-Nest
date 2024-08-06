@@ -365,7 +365,7 @@ form {
     color: white;
     border: none;
     border-radius: 5px;
-    padding: 5px 15px;
+    padding: 11px 20px;
     font-size: 16px;
 }
 .table{
@@ -389,9 +389,12 @@ border-radius: 0 16px 0 0;
     border-radius: 0 0 0 16px;
 }
 .table tbody tr:last-child td:last-child{
-    border-radius:0 0 16px 0;
+    border-radius:0 0 16px 16px;
 }
 .table tbody tr:last-child{
+    border-bottom: 0px solid transparent;
+}
+.table tbody tr:last-child td{
     border-bottom: 0px solid transparent;
 }
 .table tbody tr td{
@@ -399,6 +402,7 @@ border-radius: 0 16px 0 0;
     color:#0A0A0A;
     line-height: 19px;
     padding: 14px 30px;
+    background: transparent;
 }
 .table tbody tr td .tag {
     font-weight: 700;
@@ -763,6 +767,41 @@ td button.show svg path{
 td button.show svg path.active{
     stroke: #fff;
 }
-.expandable-row td{
+.table tbody tr.expandable-row td{
     background: #FDFFF5;
+}
+.td-card{
+    border: 1.45px solid #F1F1F1;
+    border-radius: 13px;
+    background-color: #fff;
+    padding: 11px;
+    margin-bottom: 27px;
+}
+.td-card p{
+    font-size: 15px;
+    color:#1B2128
+}
+.td-card h5{
+    font-size: 20px;
+    font-weight: 700;
+    color:#1B2128
+}
+.expandable-row .col-md-2{
+    width: 19.666%;
+}
+.table tbody tr.highlighted td{
+    background: #FDFFF5;
+}
+
+.search-container .search-input{
+    border: 1px solid #D8DBE2;
+    border-radius: 8px 0px 0 8px;
+    background: #fff;
+    padding: 0 15px 0 39px;
+    
+}
+.search-icon{
+    position: absolute;
+    top: 10px;
+    left: 10px;
 }
