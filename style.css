@@ -166,6 +166,9 @@ form {
     margin-bottom: 32px;
    
 }
+.sidebar .nav-link.active svg path{
+    stroke: #01565B;
+}
 
 .sidebar .nav-link:nth-last-child(2) {
     margin-bottom: 16px;
@@ -734,4 +737,15 @@ border-radius: 0 16px 0 0;
 .collapse_sub_nav ul{ 
     position: relative;
     left: 38px;
+}
+
+.expandable-row {
+    display: none;
+}
+
+.expand-arrow {
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 16px;
 }
