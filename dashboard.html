@@ -27,20 +27,42 @@
                     </div>
                 </div>
                 <nav class="nav flex-column w-100">
-                    <a class="nav-link d-flex align-items-center active" href="#">
+                    <a class="nav-link d-flex align-items-center active" href="dashboard.html">
                        <div class="icon me-3"><img src="./image/project.svg" class="img-fluid"/></div>
                         <span>Dashboard</span></a>
-                    <a class="nav-link d-flex align-items-center" href="#">
+                    <a class="nav-link d-flex align-items-center " href="projects.html">
                         <div class="icon me-3"><img src="./image/project.svg" class="img-fluid"/></div>
-                     Projects</a>
-                    <a class="nav-link d-flex align-items-center" href="#"> 
+                     <span>Projects</span></a>
+                    <a class="nav-link d-flex align-items-center" href="approvals.html"> 
                          <div class="icon me-3"><img src="./image/project.svg" class="img-fluid"/></div>
-                     Approvals</a>
-                    <a class="nav-link d-flex align-items-center" href="#">  <div class="icon me-3"><img src="./image/project.svg" class="img-fluid"/></div> Transactions</a>
-                    <a class="nav-link d-flex align-items-center" href="#">  <div class="icon me-3"><img src="./image/project.svg" class="img-fluid"/></div> Employee Details</a>
+                     <span>Approvals</span></a>
+                    <a class="nav-link d-flex align-items-center" href="transactions.html">  
+                        <div class="icon me-3"><img src="./image/project.svg" class="img-fluid"/></div> <span>Transactions</span></a>
+                    <a class="nav-link d-flex align-items-center" href="#sidebarDashboards" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarDashboards"> 
+                         <div class="icon me-3"><img src="./image/project.svg" class="img-fluid"/></div> <span>Employee Details</span></a>
+
+                    <div class="collapse show collapse_sub_nav" id="sidebarDashboards">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link sub_nav_link" href="salesteam.html">Sales Team</a>
+                            </li><!--end nav-item-->
+                            <li class="nav-item">
+                                <a class="nav-link sub_nav_link" href="contractor.html">Contractor</a>
+                            </li><!--end nav-item-->
+                        </ul><!--end nav-->
+                    </div>
                 </nav>
                 <div class="sideimage">
-                    <img src="./image/sidebar-image.svg" class="img-fluid"/>
+                   <div class="image_block">
+                    <div class="rainbow_ray">
+                        <img src="./image/rainbow.svg" class="img-fluid"/>
+                    </div>
+                    <div class="cloud_img"><img src="./image/cloud.gif" class="img-fluid"/></div>
+                    <div class="tree">
+                        <img src="./image/tree.svg" class="img-fluid"/>
+                    </div>
+                   </div>
+                    
                 </div>
             </div>
 
@@ -51,11 +73,48 @@
                     <span class="welcome-text"><span class="grey">Welcome</span> Shivam!</span>
                     <div class="d-flex align-items-center">
                         <div class="btn-notify position-relative d-flex justify-content-center align-items-center me-3">
-                            <img src="./image/bell.svg" class="img-fluid"/>
+                            <a class="nav-link dropdown-toggle d-flex align-items-center justify-content-center" href="#" id="navbarNotification" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="./image/bell.svg" class="img-fluid bell_img"/>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarNotification">
+                                <li><a class="dropdown-item" href="#">
+                                    <div class="notifiation_dropd_content">
+                                        <div class="intials ac_color_1">
+                                        <span>SG</span>
+                                        </div>
+                                        <div class="data">
+                                            <span>Ganesh uploaded few photos from Om Properties, Hyderabad</span>
+                                            <div class="date_time">10:12 PM , 22 Aug 2022</div>
+                                        </div>
+                                    </div>
+                                </a></li>
+                                <li><a class="dropdown-item" href="#">
+                                    <div class="notifiation_dropd_content">
+                                        <div class="intials ac_color_2">
+                                        <span>NV</span>
+                                        </div>
+                                        <div class="data">
+                                            <span>Ganesh uploaded few photos from Om Properties, Hyderabad</span>
+                                            <div class="date_time">10:12 PM , 22 Aug 2022</div>
+                                        </div>
+                                    </div>
+                                </a></li>
+                                <li><a class="dropdown-item" href="#">
+                                    <div class="notifiation_dropd_content">
+                                        <div class="intials ac_color_3">
+                                        <span>SG</span>
+                                        </div>
+                                        <div class="data">
+                                            <span>Ganesh uploaded few photos from Om Properties, Hyderabad</span>
+                                            <div class="date_time">10:12 PM , 22 Aug 2022</div>
+                                        </div>
+                                    </div>
+                                </a></li>
+                              </ul>
                             <span class="badge">6</span>
                         </div>
                         <div class="btn-notify position-relative  d-flex justify-content-center align-items-center">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle d-flex align-items-center justify-content-center" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <img src="./image/memoji.svg" class="img-fluid"/>
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">

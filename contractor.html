@@ -28,19 +28,17 @@
                     </div>
                 </div>
                 <nav class="nav flex-column w-100">
-                    <a class="nav-link d-flex align-items-center " href="dashboard.html">
+                    <a class="nav-link d-flex align-items-center" href="dashboard.html">
                        <div class="icon me-3"><img src="./image/project.svg" class="img-fluid"/></div>
                         <span>Dashboard</span></a>
-                    <a class="nav-link d-flex align-items-center active" href="projects.html">
+                    <a class="nav-link d-flex align-items-center" href="projects.html">
                         <div class="icon me-3"><img src="./image/project.svg" class="img-fluid"/></div>
                      <span>Projects</span></a>
                     <a class="nav-link d-flex align-items-center" href="approvals.html"> 
                          <div class="icon me-3"><img src="./image/project.svg" class="img-fluid"/></div>
                      <span>Approvals</span></a>
-                    <a class="nav-link d-flex align-items-center" href="transactions.html">  
-                        <div class="icon me-3"><img src="./image/project.svg" class="img-fluid"/></div> <span>Transactions</span></a>
-                    <a class="nav-link d-flex align-items-center" href="#sidebarDashboards" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarDashboards"> 
-                         <div class="icon me-3"><img src="./image/project.svg" class="img-fluid"/></div> <span>Employee Details</span></a>
+                    <a class="nav-link d-flex align-items-center" href="transactions.html">  <div class="icon me-3"><img src="./image/project.svg" class="img-fluid"/></div> <span>Transactions</span></a>
+                    <a class="nav-link d-flex align-items-center active" href="#sidebarDashboards" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarDashboards">  <div class="icon me-3"><img src="./image/project.svg" class="img-fluid"/></div> <span>Employee Details</span></a>
 
                     <div class="collapse show collapse_sub_nav" id="sidebarDashboards">
                         <ul class="nav flex-column">
@@ -48,7 +46,7 @@
                                 <a class="nav-link sub_nav_link" href="salesteam.html">Sales Team</a>
                             </li><!--end nav-item-->
                             <li class="nav-item">
-                                <a class="nav-link sub_nav_link" href="contractor.html">Contractor</a>
+                                <a class="nav-link sub_nav_link active" href="contractor.html">Contractor</a>
                             </li><!--end nav-item-->
                         </ul><!--end nav-->
                     </div>
@@ -132,7 +130,7 @@
                 <div class="container-fluid pt-3">
                     <div class="row">
                         <div class="col-md-6">
-                            <h2 class="page-title">Projects</h2>
+                            <h2 class="page-title">Contractor</h2>
                         </div>
                         <div class="col-md-6">
                             <div class="card-header d-flex justify-content-end p-0">
@@ -151,74 +149,38 @@
                     <table class="table">
                         <thead>
                             <tr>
-                                <th>Project ID</th>
+                                <th>Contractor ID</th>
                                 <th>Name</th>
-                                <th>Flat no.</th>
-                                <th>Costomer name</th>
-                                <th>Status</th>
-                                <th>Est. Completion</th>
-                                <th>Approve status</th>
-                                <th>Actions</th>
+                                <th>Type</th>
+                                <th>Phone number </th>
+                                <th>Payment Initiated</th>
+                                
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>12SD</td>
-                                <td>Ram Niwas</td>
-                                <td>102</td>
+                                <td>123</td>
                                 <td>Shivam</td>
-                                <td>RO</td>
-                                <td>12-oct-2024</td>
-                                <td><span class="tag success_tag"> <span class="dot success_dot"></span>Approved</span></td>
-                                <td><span class="action_icon">
-                                        <a>
-                                            <i class="bi bi-arrow-down-square"></i>
-                                        </a>
-                                        <!-- <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                            <li><a class="dropdown-item" href="#">Edit</a></li>
-                                          </ul> -->
-                                        </span></td>
+                                <td>Plumbing</td>
+                                <td>8125214632</td>
+                                <td>10,000</td>
+                                
                             </tr>
                             <tr>
-                                <td>12SD</td>
-                                <td>Ram Niwas</td>
-                                <td>102</td>
+                                <td>123</td>
                                 <td>Shivam</td>
-                                <td>RO</td>
-                                <td>12-oct-2024</td>
-                                <td><span class="tag pending_tag"> <span class="dot pending_dot"></span>Pending</span></td>
-                                <td><span class="action_icon">
-                                    <a>
-                                        <i class="bi bi-arrow-down-square"></i>
-                                    </a>
-                                    <!-- <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <li><a class="dropdown-item" href="#">Edit</a></li>
-                                      </ul> -->
-                                    </span></td>
-                                <td>Sachin Bhosle</td>
-                                <td>Gated</td>
-                                <td>12-oct-2023</td>
-                                <td>12-oct-2023</td>
-                                <td>Patancheru</td>
-                                <td>10,00,000</td>
-                                <td class="expand"><img src="./image/arrow-square-right.svg"/></td>
+                                <td>Plumbing</td>
+                                <td>8125214632</td>
+                                <td>10,000</td>
+                                
                             </tr>
                             <tr>
-                                <td>12SD</td>
-                                <td>Ram Niwas</td>
-                                <td>102</td>
+                                <td>123</td>
                                 <td>Shivam</td>
-                                <td>RO</td>
-                                <td>12-oct-2024</td>
-                                <td><span class="tag error_tag"> <span class="dot error_dot"></span>Rejected</span></td>
-                                <td><span class="action_icon">
-                                    <a>
-                                        <i class="bi bi-arrow-down-square"></i>
-                                    </a>
-                                    <!-- <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <li><a class="dropdown-item" href="#">Edit</a></li>
-                                      </ul> -->
-                                    </span></td>
+                                <td>Plumbing</td>
+                                <td>8125214632</td>
+                                <td>10,000</td>
+                                
                             </tr>
                         </tbody>
                     </table>
