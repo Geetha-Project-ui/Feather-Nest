@@ -749,3 +749,20 @@ border-radius: 0 16px 0 0;
     border: none;
     font-size: 16px;
 }
+td button.show{
+    transform: rotate(90deg);
+}
+td button{
+    background: transparent;
+    border: 0;
+}
+td button.show svg path{
+    stroke: #03565B;
+    fill: #03565B;
+}
+td button.show svg path.active{
+    stroke: #fff;
+}
+.expandable-row td{
+    background: #FDFFF5;
+}
