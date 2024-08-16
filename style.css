@@ -824,6 +824,21 @@ td button.show svg path.active{
     border: none;
     color: #000;
 }
+.offcanvas-backdrop.show{
+    backdrop-filter: blur(2px);
+    background-color: rgba(02, 09, 09, 0.9);
+    opacity: 1 !important;
+}
 
 
+.modal-backdrop {
+    background-color: #000909;
+    opacity: .8 !important;
+ }
+
+ .modal-open .modal-backdrop {
+    backdrop-filter: blur(2px);
+    background-color: rgba(02, 09, 09, 0.9);
+    opacity: 1 !important;
+  }
 
