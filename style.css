@@ -368,6 +368,9 @@ form {
     padding: 11px 20px;
     font-size: 16px;
 }
+.card-header button:hover {
+    background-color: #E5F1A1;
+}
 .table{
     margin-bottom: 0;
 }
@@ -805,3 +808,22 @@ td button.show svg path.active{
     top: 10px;
     left: 10px;
 }
+.modal_input{
+    margin-bottom: 16px;;
+}
+.feather_primary{
+    background-color: #23555A;
+    border: none;
+}
+.feather_primary:hover{
+    background-color: #73B78E;
+    border: none;
+}
+.feather_grey{
+    background-color: #E8E8E9;
+    border: none;
+    color: #000;
+}
+
+
+
