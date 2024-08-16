@@ -816,7 +816,8 @@ td button.show svg path.active{
     border: none;
 }
 .feather_primary:hover{
-    background-color: #73B78E;
+    background-color: #E5F1A1;
+    color: #000;
     border: none;
 }
 .feather_grey{
