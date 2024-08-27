@@ -364,9 +364,12 @@ form {
     background-color: #03565B;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     padding: 11px 20px;
     font-size: 16px;
+}
+.card-header button:hover {
+    background-color: #E5F1A1;
 }
 .table{
     margin-bottom: 0;
@@ -805,3 +808,38 @@ td button.show svg path.active{
     top: 10px;
     left: 10px;
 }
+.modal_input{
+    margin-bottom: 16px;;
+}
+.feather_primary{
+    background-color: #23555A;
+    border: none;
+}
+.feather_primary:hover{
+    background-color: #E5F1A1;
+    color: #000;
+    border: none;
+}
+.feather_grey{
+    background-color: #E8E8E9;
+    border: none;
+    color: #000;
+}
+.offcanvas-backdrop.show{
+    backdrop-filter: blur(2px);
+    background-color: rgba(02, 09, 09, 0.9);
+    opacity: 1 !important;
+}
+
+
+.modal-backdrop {
+    background-color: #000909;
+    opacity: .8 !important;
+ }
+
+ .modal-open .modal-backdrop {
+    backdrop-filter: blur(2px);
+    background-color: rgba(02, 09, 09, 0.9);
+    opacity: 1 !important;
+  }
+
