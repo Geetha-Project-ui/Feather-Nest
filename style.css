@@ -370,6 +370,10 @@ form {
 }
 .card-header button:hover {
     background-color: #E5F1A1;
+    color:#000;
+}
+.card-header button:hover  svg path{
+stroke:#000
 }
 .table{
     margin-bottom: 0;
