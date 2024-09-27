@@ -432,7 +432,7 @@
                 <div class="set">
                   <a href="#">
                     Project ID 
-                    <i class="fa fa-plus"></i>
+                    <i class="fa fa-angle-down"></i>
                   </a>
                   <div class="content">
                     <label class="form-control d-flex align-items-center border-0 mb-2">
@@ -456,7 +456,7 @@
                 <div class="set">
                   <a href="#">
                     Name 
-                    <i class="fa fa-plus"></i>
+                    <i class="fa fa-angle-down"></i>
                   </a>
                   <div class="content">
                     <label class="form-control d-flex align-items-center border-0 mb-2">
@@ -480,7 +480,7 @@
                 <div class="set">
                   <a href="#">
                     Project Type 
-                    <i class="fa fa-plus"></i>
+                    <i class="fa fa-angle-down"></i>
                   </a>
                   <div class="content">
                     <label class="form-control d-flex align-items-center border-0 mb-2">
@@ -504,7 +504,7 @@
                 <div class="set">
                   <a href="#">
                     Date 
-                    <i class="fa fa-plus"></i> 
+                    <i class="fa fa-angle-down"></i> 
                   </a>
                   <div class="content">
                     <label class="form-control d-flex align-items-center border-0 mb-2">
@@ -528,7 +528,7 @@
                 <div class="set">
                     <a href="#">
                       Location 
-                      <i class="fa fa-plus"></i> 
+                      <i class="fa fa-angle-down"></i> 
                     </a>
                     <div class="content">
                         <label class="form-control d-flex align-items-center border-0 mb-2">
@@ -552,7 +552,7 @@
                   <div class="set">
                     <a href="#">
                       Budget 
-                      <i class="fa fa-plus"></i> 
+                      <i class="fa fa-angle-down"></i> 
                     </a>
                     <div class="content">
                         <label class="form-control d-flex align-items-center border-0 mb-2">
@@ -623,16 +623,16 @@ document.addEventListener('DOMContentLoaded', function() {
         .siblings(".content")
         .slideUp(200);
       $(".set > a i")
-        .removeClass("fa-minus")
-        .addClass("fa-plus");
+        .removeClass("fa-angle-down")
+        .addClass("fa-angle-up");
     } else {
       $(".set > a i")
-        .removeClass("fa-minus")
-        .addClass("fa-plus");
+      .removeClass("fa-angle-down")
+      .addClass("fa-angle-up");
       $(this)
         .find("i")
-        .removeClass("fa-plus")
-        .addClass("fa-minus");
+        .removeClass("fa-angle-down")
+        .addClass("fa-angle-up");
       $(".set > a").removeClass("active");
       $(this).addClass("active");
       $(".content").slideUp(200);
